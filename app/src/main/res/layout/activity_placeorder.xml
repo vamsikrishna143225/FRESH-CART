@@ -40,28 +40,78 @@
         android:textStyle="bold"
         android:textColor="@android:color/black" />
 
-    <!-- Fetched Address TextView -->
     <TextView
-        android:id="@+id/location_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fetching your current location..."
-        android:textSize="16sp"
-        android:textColor="@android:color/darker_gray"
-        android:padding="8dp"
-        android:gravity="center"
-        android:layout_marginTop="8dp" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="Current Location:"
+        />
 
-    <!-- Confirm Address Button -->
-    <Button
-        android:id="@+id/confirm_button"
-        android:layout_width="200dp"
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Confirm Address"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="?attr/colorPrimary"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="20dp"
+        android:text="Latitude: -"
+        />
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="10dp"
+        android:text="Longitude: -"
+        />
+
+    <TextView
+        android:id="@+id/tvProvider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="10dp"
+        android:text="Provider: -"
+        />
+
+    <TextView
+        android:id="@+id/tvCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="10dp"
+        android:text="Country: -"
+        />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="10dp"
+        android:text="Address: -"
+        />
+
+    <Button
+        android:id="@+id/btOpenMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#007145"
+        android:text="Open Map"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btGetLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FB0000"
+        android:layout_margin="30dp"
+        android:text="Get Current Location"
         android:textColor="@android:color/white"
-        android:layout_gravity="center" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"/>
 
     <!-- Place Order Button -->
     <Button
