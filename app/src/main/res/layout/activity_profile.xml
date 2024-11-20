@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/green_background">
+
+    <!-- CardView for Profile Display -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <!-- Username Display -->
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Username will appear here"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp" />
+
+            <!-- Profile Image -->
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/freshcart"
+                android:contentDescription="User Profile Image"
+                android:scaleType="centerInside"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

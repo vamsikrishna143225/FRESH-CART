@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Header TextView -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Payment Page"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:background="@color/green_background"
+        android:padding="8dp" />
+
+    <!-- Item Count -->
+    <TextView
+        android:id="@+id/item_count_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+
+    <!-- Shipping Address Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Shipping Address"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <!-- Fetched Address TextView -->
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fetching your current location..."
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <!-- Confirm Address Button -->
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Confirm Address"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center" />
+
+    <!-- Place Order Button -->
+    <Button
+        android:id="@+id/btnf"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+
